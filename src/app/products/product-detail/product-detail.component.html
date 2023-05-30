@@ -1,0 +1,28 @@
+<a routerLink="./../">Productos</a>
+<main>
+    <ng-container *ngIf="product; else noProduct">
+
+        <div class="image">
+            <img [src]="product.image" />
+        </div>
+        <div class="info">
+            <h1>
+                {{ product.title }}
+            </h1>
+            <p class="description">
+                {{ product.description }}
+            </p>
+            <p class="bold">
+                {{ product.price }}€
+            </p>
+        </div>
+
+    </ng-container>
+
+    <ng-template #noProduct>
+        <ng-container *ngIf="isLoading; else withOutProduct">
+            Cargando...
+        </ng-container>
+        <ng-template #withOutProduct>Sin productos...</ng-template>
+    </ng-template>
+</main>

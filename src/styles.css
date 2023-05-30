@@ -1,0 +1,36 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+}
+
+
+h1 {
+    font-style: normal;
+    font-size: 24px;
+    line-height: 150%;
+}
+
+h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+p.bold {
+    font-weight: 700;
+}
+
+p.detail {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 150%;
+}

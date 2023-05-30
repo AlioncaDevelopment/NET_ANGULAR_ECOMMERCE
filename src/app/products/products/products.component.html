@@ -1,0 +1,21 @@
+<main>
+    <div class="products">
+
+        <ng-container *ngIf="productsItems;else noProduct">
+            <ng-container *ngFor="let product of productsItems">
+                <div class="product">
+                    <app-product-item [product]="product" />
+                </div>
+            </ng-container>
+        </ng-container>
+
+        <ng-template #noProduct>
+            <ng-container *ngIf="isLoading; else withOutProduct">
+                Cargando...
+            </ng-container>
+            <ng-template #withOutProduct>
+                Sin productos...
+            </ng-template>
+        </ng-template>
+    </div>
+</main>

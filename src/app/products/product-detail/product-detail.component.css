@@ -1,0 +1,23 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: 80%;
+    height: 80%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+}
+
+div.info {
+    width: 50%;
+    padding: 20px;
+}

@@ -1,0 +1,16 @@
+div.products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+main {
+    display: flex;
+    align-items: center;
+}
+
+div.product {
+    border: solid 1px black;
+    width: 300px;
+}

@@ -1,0 +1,11 @@
+<a [routerLink]="['./', product.id]">
+    <div class="product" *ngIf="product">
+        <div class="image">
+            <img [src]="product.image">
+        </div>
+        <div class="info">
+            <h1>{{product.title}}</h1>
+            <h3>{{product.price | number : '1.2'}}€</h3>
+        </div>
+    </div>
+</a>

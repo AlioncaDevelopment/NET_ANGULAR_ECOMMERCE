@@ -1,0 +1,28 @@
+div.product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px black;
+    gap: 10px;
+    padding: 10px;
+}
+
+img {
+    object-fit: contain;
+    width: 200px;
+    height: 250px;
+}
+
+div.info {
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    display: -webkit-box;
+    max-width: 100%;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
